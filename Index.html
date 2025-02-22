@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JHzOS - Download</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-image: url('Images/Background.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFFFFF;
+            backdrop-filter: blur(2px);
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: -1;
+        }
+        .outer-container {
+            display: flex;
+            justify-content: space-between; /* Organiza a descrição e a logo lado a lado */
+            align-items: center;
+            width: 80%;
+            max-width: 1200px;
+        }
+        .container, .description-container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+            width: 45%;
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(6px);
+        }
+        .description-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .description-text {
+            color: #d0d0d0;
+            line-height: 1.4;
+        }
+        .description-subtext {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #bbbbbb;
+            text-align: left;
+        }
+        .image-container img {
+            max-width: 70%;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        .highlight {
+            color: #a855f7; /* Roxo */
+        }
+        .download-button {
+            background: #6200ea;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin-top: 15px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .download-button:hover {
+            transform: translateY(-4px);
+            background: #7b2ff7;
+        }
+        .question {
+            margin-top: 20px;
+            font-size: 1em;
+        }
+
+        /* Novos estilos para os ícones do YouTube e Discord no canto superior esquerdo */
+        .social-links {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-links a {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s, filter 0.3s;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+            filter: blur(3px);
+        }
+
+        .social-links img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-container">
+        <!-- Descrição -->
+        <div class="description-container">
+            <div class="description-title">💻 JHzOS 1.1 - Performance Otaku 🎮</div>
+            <div class="description-text">
+                Uma ISO focada em desempenho e estabilidade para games, mantendo um consumo de RAM extremamente baixo e processos reduzidos ao essencial. Inspirada no mundo otaku/anime, proporciona um sistema rápido e otimizado para quem quer jogar sem preocupações. 🚀
+            </div>
+            <div class="description-subtext">
+                ✅ <b>Testado em PCs com apenas 2GB de RAM</b> e rodou de forma surpreendente.<br>
+                ✅ <b>Baseada na Build 21H2 - 19044.1288.</b><br>
+                ✅ <b>Consumo de Disco:</b> Média de 7GB a 10GB, dependendo do hardware.<br>
+                ✅ <b>Windows Update:</b> Apenas para uso básico da Microsoft Store e instalação automática de drivers.<br>
+            </div>
+            <div class="description-subtext">
+                🔍 <b>Testes de Compatibilidade:</b><br>
+                🛠️ <b>Apps Compatíveis:</b> Xbox, Painel de Comandos Intel, Minecraft e GHUB.<br>
+                📡 <b>Recursos & Funções:</b> Compartilhamento WiFi via USB, Bluetooth e Windows Update.<br>
+                ⚙️ <b>Otimizações:</b> Serviços desnecessários desativados, telemetria reduzida, consumo de RAM e CPU otimizados.<br>
+                🖥️ <b>Requisitos Mínimos:</b> Processador dual-core, 2GB de RAM, 10GB de espaço em disco.<br>
+            </div>
+        </div>
+
+        <!-- Logo e botão de download -->
+        <div class="container">
+            <h1><span class="team" style="color: white;">JHz</span> <span class="antilag" style="color: #8e44ad;">OS 1.1</span></h1>
+            <div class="image-container">
+                <img src="Images/Logo.png" alt="Download Image">
+            </div>
+            <button class="download-button" onclick="window.location.href='https://download1325.mediafire.com/fe9niv4qo0gg-9OM7DZTtFaCJbNq5rajxRpeUR2hAa33pEl4fWh_rlpFA8xRexCkkEQnruBtJzSK5bbATIvGMx_-279rKsXqqDOhU8Nz74KlZ-rOmDcMOZdK3uprVmx4Y9-xdFCwvQcgo7-kRSKz3ryGm4x--RyTMZNQb8_kB7A0HA/19oza04g7f9ke07/JHzOS+1.1.iso'">
+                Download 📁
+            </button>
+            <div class="question">Desbloqueie 100% Do Potencial da Sua Máquina: Pronto para a performance? 🖥️</div>
+        </div>
+    </div>
+
+    <!-- Links de redes sociais no canto superior esquerdo -->
+    <div class="social-links">
+        <a href="https://www.youtube.com/@JohnzinNTV/videos" target="_blank">
+            <img src="Images/Youtube.png" alt="YouTube">
+        </a>
+        <a href="https://discord.com/invite/rhmnzEJeJQ" target="_blank">
+            <img src="Images/Discord.png" alt="Discord">
+        </a>
+    </div>
+</body>
+</html>
